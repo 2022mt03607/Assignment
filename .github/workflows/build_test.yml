@@ -39,7 +39,7 @@ jobs:
         run: docker build -t react-web-app .
 
       - name: Tag Docker image
-        run: docker tag react-web-app ${{ secrets.DOCKER_USERNAME }}/react-web-app
+        run: docker tag react-web-app ${{ secrets.DOCKERHUB_USERNAME }}/react-web-app
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/react-web-app
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/react-web-app
