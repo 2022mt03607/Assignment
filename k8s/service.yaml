@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: react-app-active
@@ -12,7 +12,7 @@ spec:
       nodePort: 30000
   type: NodePort
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: react-app-preview
