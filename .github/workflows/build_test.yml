@@ -42,4 +42,4 @@ jobs:
         run: docker tag react-web-app ${{ secrets.DOCKERHUB_USERNAME }}/react-web-app:stable
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/react-web-app
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/react-web-app:stable
